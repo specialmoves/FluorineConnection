@@ -20,6 +20,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+http://labs.specialmoves.com/code/flash-data-transfer-using-fluorinefx/
 http://github.com/specialmoves/FluorineConnection
 http://www.opensource.org/licenses/mit-license.php
 
@@ -29,7 +30,7 @@ http://www.opensource.org/licenses/mit-license.php
 FluorineConnection is a group of classes created to make it easier to work with FluorineFx Flash Remoting connections.
 
 More information on FluorineFx can be found at http://www.fluorinefx.com/
-And a blog post which briefly introduces this code can be found here <<coming-soon>>
+And a blog post which briefly introduces this code can be found here http://labs.specialmoves.com/code/flash-data-transfer-using-fluorinefx/
 
 
 
