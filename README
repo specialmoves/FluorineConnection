@@ -1,0 +1,48 @@
+Licensed under the MIT License
+ 
+Copyright (c) 2010 Specialmoves Ltd
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+http://github.com/specialmoves/FluorineConnection
+http://www.opensource.org/licenses/mit-license.php
+
+
+
+****** Introduction ******
+FluorineConnection is a group of classes created to make it easier to work with FluorineFx Flash Remoting connections.
+
+More information on FluorineFx can be found at http://www.fluorinefx.com/
+And a blog post which briefly introduces this code can be found here <<coming-soon>>
+
+
+
+****** Examples ******
+
+//create a connection by providing a custom configuration class
+var fluorineConnection : IFluorineConnection = new FluorineConnection(new FluorineConfig("/Gateway.aspx"));
+//listen out for errors
+fluorineConnection.addEventListener(FluorineErrorEvent.CONNECT_ERROR, errorHandler, false, 0, true);
+fluorineConnection.addEventListener(FluorineErrorEvent.CALL_ERROR, errorHandler, false, 0, true);
+//create a responder to handle the reponse
+var responder : Responder = new Responder(onSuccess, FluorineUtils.onError);
+//make the call
+fluorineConnection.call("Cake.GetSlice", responder, sliceType);
+
+See src/com/examplejob for a more detailed example.  
